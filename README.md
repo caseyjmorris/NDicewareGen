@@ -7,7 +7,7 @@ thought it was a neat idea but that I'd like to do it on the computer.  Here we 
 
 # Are these passwords truly random?
 Well, the words are scrambled with 
-RNGCryptoServiceProvider (https://msdn.microsoft.com/en-us/library/system.security.cryptography.rngcryptoserviceprovider(v=vs.110).aspx),
+[RNGCryptoServiceProvider](https://msdn.microsoft.com/en-us/library/system.security.cryptography.rngcryptoserviceprovider%28v=vs.110%29.aspx),
 so, they're as good as the implementation of that.
 
 # What is needed to run it?
