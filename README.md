@@ -15,3 +15,4 @@ Just the program and a dictionary file with words separated by line breaks, like
 
 * http://world.std.com/~reinhold/diceware8k.txt
 * https://users.cs.duke.edu/~ola/ap/linuxwords
+* http://www.gutenberg.org/ebooks/3201
