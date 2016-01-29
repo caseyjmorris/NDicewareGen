@@ -1,6 +1,6 @@
 ﻿namespace Diceware.UI
 {
-  partial class Form1
+  partial class MainForm
   {
     /// <summary>
     /// Required designer variable.
@@ -39,6 +39,7 @@
       this.copyToClipboardButton = new System.Windows.Forms.Button();
       this.saveSettingsButton = new System.Windows.Forms.Button();
       this.findFolderButton = new System.Windows.Forms.Button();
+      this.aboutLink = new System.Windows.Forms.LinkLabel();
       this.SuspendLayout();
       // 
       // delimiterLabel
@@ -139,11 +140,23 @@
       this.findFolderButton.UseVisualStyleBackColor = true;
       this.findFolderButton.Click += new System.EventHandler(this.findFolderButton_Click);
       // 
-      // Form1
+      // aboutLink
+      // 
+      this.aboutLink.AutoSize = true;
+      this.aboutLink.Location = new System.Drawing.Point(13, 533);
+      this.aboutLink.Name = "aboutLink";
+      this.aboutLink.Size = new System.Drawing.Size(144, 20);
+      this.aboutLink.TabIndex = 11;
+      this.aboutLink.TabStop = true;
+      this.aboutLink.Text = "About this program";
+      this.aboutLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.aboutLink_LinkClicked);
+      // 
+      // MainForm
       // 
       this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
       this.ClientSize = new System.Drawing.Size(1540, 565);
+      this.Controls.Add(this.aboutLink);
       this.Controls.Add(this.findFolderButton);
       this.Controls.Add(this.saveSettingsButton);
       this.Controls.Add(this.copyToClipboardButton);
@@ -155,8 +168,8 @@
       this.Controls.Add(this.minimumSizeLabel);
       this.Controls.Add(this.delimiterTextBox);
       this.Controls.Add(this.delimiterLabel);
-      this.Name = "Form1";
-      this.Text = "Form1";
+      this.Name = "MainForm";
+      this.Text = "NDicewareGen";
       this.ResumeLayout(false);
       this.PerformLayout();
 
@@ -175,6 +188,7 @@
     private System.Windows.Forms.Button copyToClipboardButton;
     private System.Windows.Forms.Button saveSettingsButton;
     private System.Windows.Forms.Button findFolderButton;
+    private System.Windows.Forms.LinkLabel aboutLink;
   }
 }
 

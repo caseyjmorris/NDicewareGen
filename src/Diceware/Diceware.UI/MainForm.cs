@@ -5,7 +5,7 @@ using Diceware.Behaviors;
 
 namespace Diceware.UI
 {
-  public partial class Form1 : Form
+  public partial class MainForm : Form
   {
     private readonly DicewareSettingsReader settingsReader = new DicewareSettingsReader();
 
@@ -30,7 +30,7 @@ namespace Diceware.UI
       return !err;
     }
 
-    public Form1()
+    public MainForm()
     {
       InitializeComponent();
 
@@ -102,6 +102,13 @@ namespace Diceware.UI
       {
         this.dictionaryLocationTextBox.Text = fd.FileName;
       }
+    }
+
+    private void aboutLink_LinkClicked (object sender, LinkLabelLinkClickedEventArgs e)
+    {
+      var abt = new About();
+
+      abt.Show();
     }
   }
 }
